@@ -1,0 +1,6 @@
+name: 'IntelliJ Inspections'
+description: 'Allows you to run IntelliJ Inspections'
+author: 'Gopal Sharma <gps@surya-soft.com>'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
