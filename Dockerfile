@@ -8,6 +8,7 @@ WORKDIR /opt
 
 COPY jdk.table.xml /etc/idea/config/options/
 COPY entrypoint.sh /entrypoint.sh
+COPY analyze_inspections.py /analyze_inspections.py
 
 RUN wget -nv https://download-cf.jetbrains.com/idea/${INTELLIJ_IDE_TAR} && \
     tar xzf ${INTELLIJ_IDE_TAR} && \
