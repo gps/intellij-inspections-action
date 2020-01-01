@@ -1,6 +1,10 @@
 name: 'IntelliJ Inspections'
 description: 'Allows you to run IntelliJ Inspections'
 author: 'Gopal Sharma <gps@surya-soft.com>'
+inputs:
+  GH_TOKEN:
+    description: GitHub Token used to comment on PR
+    required: True
 runs:
   using: 'docker'
   image: 'Dockerfile'
